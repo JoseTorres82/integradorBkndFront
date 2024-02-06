@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { saboresHelado } from "../../components/Products/Data/sabores";
 import '../../Styles/GlobalStyles.css'
 import { PiIceCreamLight } from "react-icons/pi";
