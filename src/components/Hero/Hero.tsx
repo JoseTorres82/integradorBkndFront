@@ -31,7 +31,7 @@ const HeroContainer = styled.div<HeroProps>`
     background-position: center;
     filter: blur(30px); 
     z-index: -1;
-
+    opacity:45%;
    
   }
 

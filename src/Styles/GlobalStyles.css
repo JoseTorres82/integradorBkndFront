@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 :root {
   color: #213547;
   background-color: #fff;
@@ -10,11 +11,12 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: white;
   -webkit-tap-highlight-color: transparent;
   overflow-x: hidden;
@@ -38,6 +40,80 @@ a {
   background-color: var(--main-color-1);
   padding: 5px;
   border-radius: 5px;
+}
+/* //Botones Sabores */
+.verSabores {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: block;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    width:100%;
+    margin: 0 auto;
+    border-radius: 3px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #333;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-family: "Montserrat", sans-serif;
+    background: var(--main-color-4);
+  }
+}
+
+.botVer {
+  width: 350px;
+  height: 263px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  font-size: large;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #f5f5f5;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  transition: box-shadow 0.3s ease,transform 0.3s ease;
+
+  &:hover {
+    background-color: #f5f5f5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+  }
+}
+.bot1 {
+  background-image: url(/img/sabores1.webp);
+}
+.bot2 {
+  background-image: url(/img/sabores.webp);
+}
+.bot3 {
+  background-image: url(/img/sabores2.webp);
+}
+
+.listaSabores{
+  max-width: 1020px;
+  margin:0 auto;
+  padding: 1rem;
+  margin-top: 1rem;
+  display: block;
+  text-align: left;
+  font-weight: 400;
+  color:#f5f5f5;
+  background-image: url(../../public/img/bghelados.webp);
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 /* //colors 
 #ffe4e1
