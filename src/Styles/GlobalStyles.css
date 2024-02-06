@@ -108,12 +108,12 @@ a {
   display: block;
   text-align: left;
   font-weight: 400;
-  color:#f5f5f5;
-  background-image: url(../../public/img/bghelados.webp);
+  color:#333;
+ /*  background-image: url(../../public/img/bghelados.webp); */
   background-position: center;
   background-size:cover;
   background-repeat: no-repeat;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 /* //colors 
 #ffe4e1
