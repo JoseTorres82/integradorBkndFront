@@ -28,7 +28,7 @@ const Header: React.FC = () => {
     <HeaderStyled height="5rem" backgroundColor="#fabfb7">
       <div className="headerContainer">
         <div className="logo">
-          <img src="/src/assets/Logo.png" alt="logo bulldog frances" />
+          <img src="/Logo.png" alt="logo bulldog frances" />
           <div className="LogoTxt">
             <h1>COOPER</h1>
             <span>Helado Artesanal</span>

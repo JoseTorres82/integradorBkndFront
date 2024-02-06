@@ -28,7 +28,7 @@ const cardData = [
   },
   {
     id: 3,
-    img: "/img/helado-1Kg.png",
+    img: "/img/helado-1KG.png",
     title: "1 Kilo",
     /* quantity: 4, */
     description:"Elegí 4 de nuestros fabulosos sabores",

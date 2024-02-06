@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
             <div className="footerContainer">
                 <FooterSection>
                     <div className="footerLogo">
-                    <img src="/src/assets/Logo.png" alt="logo bulldog frances" />
+                    <img src="/Logo.png" alt="logo bulldog frances" />
                     <h2>Cooper</h2>
                     <p>Helado Artesanal</p>
                     </div>
