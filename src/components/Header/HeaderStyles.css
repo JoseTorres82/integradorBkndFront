@@ -1,0 +1,79 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fff;
+  --main-color-1: #f7cac9;
+  --main-color-2: #f8edeb;
+  --main-color-3: #ffe5b4;
+  --main-color-4: #c5e0dc;
+  --main-color-5: #a2c8cc;
+  --font-color-main: #1d1d1d;
+  padding-bottom: 10px;
+}
+li{
+    text-decoration: none;
+    cursor: pointer;
+    list-style: none;
+    margin-right: 15px;
+ 
+}
+
+@media (width<=640px) {
+    ul{
+        display: none;
+    }
+
+
+}
+.logo{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #1d1d1d;
+    font-family:Helvetica, sans-serif ;
+    margin-bottom: 1.5rem;
+    margin-left: 15px;
+}
+.logo img{
+    width: 90px;
+    height: auto;
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 5px;
+}
+.LogoTxt{
+    display:block;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.LogoTxt h1{
+margin-bottom: 0;
+padding: 0;
+}
+.LogoTxt span{
+    margin-bottom: 5px;
+  
+}
+ul { 
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+
+}
+
+.headerContainer{
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
