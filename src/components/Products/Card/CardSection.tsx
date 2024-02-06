@@ -12,7 +12,7 @@ const CardSectionContainer = styled.div`
 const cardData = [
   {
     id: 1,
-    img: "/public/assets/img/helado-cuartokg.png",
+    img: "/img/helado-cuartokg.png",
     title: "Cuarto kilo",
     /* quantity: 2, */
     description:"Elegí 2 de nuestros fabulosos sabores",
@@ -20,7 +20,7 @@ const cardData = [
   },
   {
     id: 2,
-    img: "/public/assets/img/helado-mediokg.png",
+    img: "/img/helado-mediokg.png",
     title: "Medio kilo",
     /* quantity: 4, */
     description:"Elegí 4 de nuestros fabulosos sabores",
@@ -28,7 +28,7 @@ const cardData = [
   },
   {
     id: 3,
-    img: "/public/assets/img/helado-1Kg.png",
+    img: "/img/helado-1Kg.png",
     title: "1 Kilo",
     /* quantity: 4, */
     description:"Elegí 4 de nuestros fabulosos sabores",
@@ -36,7 +36,7 @@ const cardData = [
   },
   {
     id: 4,
-    img: "/public/assets/img/salsa-grande.png",
+    img: "/img/salsa-grande.png",
     title: "Salsas Grande",
    /*  quantity:1, */
     description: "Sabor Mega Extra Grande para tu helado",
@@ -44,7 +44,7 @@ const cardData = [
   },
   {
     id: 5,
-    img: "/public/img/torta-helada.png",
+    img:"/img/torta-helada.png",
     title: "Tortas Heladas",
    /*  quantity:1, */
     description: "12 Porciones Elegí tu Sabor Preferido",
@@ -52,7 +52,7 @@ const cardData = [
   },
   {
     id: 6,
-    img: "/public/assets/img/chocohelado.png",
+    img: "/img/chocohelado.png",
     title: "Tortas Heladas",
    /*  quantity:1, */
     description: "12 Porciones. El mas rico chocolate",
@@ -60,7 +60,7 @@ const cardData = [
   },
   {
     id: 7,
-    img: "/public/assets/img/almendrado.png",
+    img: "/img/almendrado.png",
     title: "Postre Almendrado",
    /*  quantity:1, */
     description: "12 Porciones. El Helado más rico del País",
@@ -68,7 +68,7 @@ const cardData = [
   },
   {
     id: 8,
-    img: "/public/assets/img/postreind.png",
+    img: "/img/postreind.png",
     title: "Postres Individuales",
    /*  quantity:1, */
     description: "Disfruta de nuestras delicias para uno",
