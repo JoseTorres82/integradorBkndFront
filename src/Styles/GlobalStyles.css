@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Dancing+Script:wght@700&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Dancing+Script:wght@700&display=swap");
+* {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -27,8 +27,8 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-span{
-  font-family: 'Dancing Script', cursive;
+span {
+  font-family: "Dancing Script", cursive;
   font-size: 1.5rem;
 }
 a {
@@ -52,7 +52,7 @@ a {
   border-radius: 5px;
 }
 /* //Botones Sabores */
-.verSabores {
+.titulos {
   max-width: 1280px;
   margin: 0 auto;
   display: block;
@@ -89,7 +89,7 @@ a {
   cursor: pointer;
   padding: 5px;
   font-size: large;
-  font-family: 'Cabin', sans-serif;
+  font-family: "Cabin", sans-serif;
 
   font-weight: 400;
   font-size: 2rem;
@@ -121,6 +121,7 @@ a {
   display: block;
   text-align: left;
   font-weight: 400;
+  
   color: #333;
   /*  background-image: url(../../public/img/bghelados.webp); */
   background-position: center;
@@ -128,6 +129,29 @@ a {
   background-repeat: no-repeat;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+.btnsContainer{
+  display: flex;
+  gap: 15px;
+}
+.btnsContainer button{
+  background-color: #ffcc00;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    width: 100%;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #e6b800;
+    }
+}
+/*  */
 /* //colors 
 #ffe4e1
 #d8f8e1

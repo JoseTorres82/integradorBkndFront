@@ -1,14 +1,16 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 interface CardModelProps {
   img: string;
   title: string;
-  /* quantity: number; */
-  description:string;
+  description: string;
   price: number;
+  category: string;
   isSelected: boolean;
   onClick: () => void;
+  handlePedidoClick: () => void;  // Agrega la propiedad handlePedidoClick
 }
 
 const CardContainer = styled.div<{ isSelected: boolean }>`
@@ -49,10 +51,12 @@ const CardText = styled.p`
 const CardPrice = styled.span`
   font-size: 16px;
   font-weight: bold;
-  font-family: "Montserrat", sans-serif; 
+  font-family: "Montserrat", sans-serif;
 `;
-
-const CardButton = styled.button`
+/* const CardCategory = styled.span`
+  display:none;
+` */
+const CardButton = styled(Link)`
   background-color: #ffcc00;
   color: white;
   padding: 8px 12px;
@@ -62,6 +66,8 @@ const CardButton = styled.button`
   font-size: 14px;
   margin-top: 10px;
   width: 100%;
+  text-decoration: none;
+  display: block;
   transition: background-color 0.3s ease;
 
   &:hover {
@@ -72,21 +78,23 @@ const CardButton = styled.button`
 const CardModel: React.FC<CardModelProps> = ({
   img,
   title,
- /*  quantity, */
- description,
+  description,
   price,
   isSelected,
   onClick,
+  handlePedidoClick,
 }) => {
   return (
     <CardContainer isSelected={isSelected} onClick={onClick}>
       <CardImage src={img} alt={title} />
       <CardContent>
         <CardTitle>{title}</CardTitle>
-        {/* <CardText>({quantity} gustos por pote)</CardText> */}
         <CardText>{description}</CardText>
         <CardPrice>${price}</CardPrice>
-        <CardButton>Pedir</CardButton>
+        {/* <CardCategory>${category}</CardCategory> */}
+        <CardButton to="/PedidoPage" onClick={handlePedidoClick}>
+          Pedir
+        </CardButton>
       </CardContent>
     </CardContainer>
   );

@@ -129,7 +129,7 @@ const ContactForm: React.FC = () => {
 
     return (
         <ContenedorPrincipal>
-            < H2Container className="verSabores" id="contacto">
+            < H2Container className="titulos" id="contacto">
             <h2><PiIceCreamLight /> Hablamos? <PiIceCreamLight /></h2>
             </H2Container >
             <FormContainer >

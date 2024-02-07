@@ -23,7 +23,7 @@ const ListaSabores = () => {
     };
 
     return (
-        <div className="verSabores" id="sabores">
+        <div className="titulos" id="sabores">
             <h2><PiIceCreamLight /> Probá Nuestros Exquisitos Sabores <PiIceCreamLight /></h2>
             <a href="#lista"><button className="botVer bot1" onClick={() => mostrarSabores("heladosDeCrema")}>Helados de Crema</button></a>
             <a href="#lista"><button className="botVer bot2" onClick={() => mostrarSabores("heladosAlAgua")}>Helados al Agua</button></a>
