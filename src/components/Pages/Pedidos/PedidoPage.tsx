@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { IoMdCheckmark, IoMdClose } from "react-icons/io";
 import { PiIceCreamLight } from "react-icons/pi";
 import { saboresHeladoEleccion } from "../../Products/Data/SaborHeladoEleccion";
+import '../../../Styles/GlobalStyles.css'
 
 const ContenedorPrincipal = styled.div`
   max-width: 1280px;
@@ -72,6 +73,7 @@ const DataSelect = styled.div`
   flex-direction: column;
   text-align: left;
   font-family: "Cabin", sans-serif;
+  
 `;
 
 const SelectedFlavors = styled.h3`
