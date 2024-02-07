@@ -23,13 +23,13 @@ const ListaSabores = () => {
     };
 
     return (
-        <div className="verSabores">
-            <h2><PiIceCreamLight /> Prueba Nuestros Exquisitos Sabores <PiIceCreamLight /></h2>
-            <button className="botVer bot1" onClick={() => mostrarSabores("heladosDeCrema")}>Helados de Crema</button>
-            <button className="botVer bot2" onClick={() => mostrarSabores("heladosAlAgua")}>Helados al Agua</button>
-            <button className="botVer bot3" onClick={() => mostrarSabores("saboresEspeciales")}>Sabores Especiales</button>
+        <div className="verSabores" id="sabores">
+            <h2><PiIceCreamLight /> Probá Nuestros Exquisitos Sabores <PiIceCreamLight /></h2>
+            <a href="#lista"><button className="botVer bot1" onClick={() => mostrarSabores("heladosDeCrema")}>Helados de Crema</button></a>
+            <a href="#lista"><button className="botVer bot2" onClick={() => mostrarSabores("heladosAlAgua")}>Helados al Agua</button></a>
+            <a href="#lista"><button className="botVer bot3" onClick={() => mostrarSabores("saboresEspeciales")}>Sabores Especiales</button></a>
 
-            <ul className="listaSabores">
+            <ul className="listaSabores" id="Lista">
                 {sabores.map((sabor, index) => (
                     <li key={index}>{sabor}</li>
                 ))}

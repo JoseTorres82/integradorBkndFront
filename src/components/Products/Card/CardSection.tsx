@@ -20,9 +20,9 @@ display: flex;
 justify-content: center;
 color:#333;
 text-align:center;
-padding-top:25px;
-padding-bottom:25px;
-font-family: 'Montserrat', sans-serif;
+font-family: "Dancing Script", cursive;
+font-size:1.5rem;
+/* font-family: 'Montserrat', sans-serif; */
 background: var(--main-color-4);
 `;
 const cardData = [
@@ -88,7 +88,7 @@ const cardData = [
     title: "Postres Individuales",
     /*  quantity:1, */
     description: "Disfruta de nuestras delicias para uno",
-    price: 14500,
+    price: 3500,
   },
 
 ];
@@ -102,7 +102,7 @@ const CardSection: React.FC = () => {
 
   return (
     <CardSectionContainer>
-      <CardTitleContainer><h2><PiIceCreamLight /> Cuanto Helado Queres Hoy? <PiIceCreamLight /></h2></CardTitleContainer>
+      <CardTitleContainer id="pedir"><h2><PiIceCreamLight /> Cuánto Helado Querés Hoy? <PiIceCreamLight /></h2></CardTitleContainer>
       {cardData.map((card) => (
         <CardModel
           key={card.id}

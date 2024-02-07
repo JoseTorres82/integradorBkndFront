@@ -27,10 +27,12 @@ const Navbar: React.FC<NavbarProps> = ({ backgroundColor, textColor }) => {
     <NavbarContainer backgroundColor={backgroundColor} textColor={textColor}>
       
       <ul>
-        <li>Contacto</li>
-        <li>Ingresar</li>
-        <li>Registro</li>
-        <li>Mi pedido</li>
+        <a href="#"><li>Ingresar</li></a>
+        <a href="#"><li>Registro</li></a>
+        <li><a href="#pedir">Pedir</a></li>
+        <li><a href="#sabores">Sabores</a></li>
+        <a href="#contacto"><li>Contacto</li></a>
+        <a href="#"><li>Mi pedido</li></a>
       </ul>
     </NavbarContainer>
   );

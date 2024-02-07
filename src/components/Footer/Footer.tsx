@@ -36,20 +36,20 @@ const Footer: React.FC = () => {
                     <div className="footerLogo">
                     <img src="/Logo.png" alt="logo bulldog frances" />
                     <h2>Cooper</h2>
-                    <p>Helado Artesanal</p>
+                    <p><span>Helado Artesanal</span></p>
                     </div>
                 </FooterSection>
                 <FooterSection>
                     <h2>PEDIDOS</h2>
-                    <p><FaPhoneVolume /> <span> 0800-1234-5678</span></p>
-                    <p><FaPhoneVolume /> <span> 0800-4321-8765</span></p>
-                    <p><SiWhatsapp /> <span>11-1234-5678</span></p>
-                    <p><MdOutlineMail /> <span>cooper@helados.com.ar</span></p>
+                    <p><FaPhoneVolume />  0800-1234-5678</p>
+                    <p><FaPhoneVolume />  0800-4321-8765</p>
+                    <p><SiWhatsapp /> 11-1234-5678</p>
+                    <p><MdOutlineMail /> cooper@helados.com.ar</p>
                 </FooterSection>
                 <FooterSection>
                     <h2>SEGUINOS</h2>
-                   <p> <SiInstagram /> <span>@coope_heladosOK</span></p>
-                   <p> <SiFacebook /> <span>@coope_heladosOK</span></p>
+                   <p> <SiInstagram /> @cooper_heladosOK</p>
+                   <p> <SiFacebook /> @cooper_heladosOK</p>
                 </FooterSection>
             </div>
         </FooterContainer>

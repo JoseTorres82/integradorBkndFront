@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Dancing+Script:wght@700&display=swap');
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 :root {
   color: #213547;
   background-color: #fff;
@@ -20,6 +25,11 @@ body {
   color: white;
   -webkit-tap-highlight-color: transparent;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+span{
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
 }
 a {
   color: #131415;
@@ -51,7 +61,7 @@ a {
   align-items: center;
 
   h2 {
-    width:100%;
+    width: 100%;
     margin: 0 auto;
     border-radius: 3px;
     margin-top: 2rem;
@@ -63,7 +73,9 @@ a {
     text-align: center;
     padding-top: 25px;
     padding-bottom: 25px;
-    font-family: "Montserrat", sans-serif;
+    /*   font-family: "Montserrat", sans-serif; */
+    font-family: "Dancing Script", cursive;
+    font-size: 2.5rem;
     background: var(--main-color-4);
   }
 }
@@ -77,12 +89,13 @@ a {
   cursor: pointer;
   padding: 5px;
   font-size: large;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Cabin', sans-serif;
+
   font-weight: 400;
   font-size: 2rem;
   color: #f5f5f5;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-  transition: box-shadow 0.3s ease,transform 0.3s ease;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 
   &:hover {
     background-color: #f5f5f5;
@@ -100,18 +113,18 @@ a {
   background-image: url(/img/sabores2.webp);
 }
 
-.listaSabores{
+.listaSabores {
   max-width: 1020px;
-  margin:0 auto;
+  margin: 0 auto;
   padding: 1rem;
   margin-top: 1rem;
   display: block;
   text-align: left;
   font-weight: 400;
-  color:#333;
- /*  background-image: url(../../public/img/bghelados.webp); */
+  color: #333;
+  /*  background-image: url(../../public/img/bghelados.webp); */
   background-position: center;
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }

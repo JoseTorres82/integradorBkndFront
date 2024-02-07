@@ -49,6 +49,7 @@ const CardText = styled.p`
 const CardPrice = styled.span`
   font-size: 16px;
   font-weight: bold;
+  font-family: "Montserrat", sans-serif; 
 `;
 
 const CardButton = styled.button`
