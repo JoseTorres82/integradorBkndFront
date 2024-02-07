@@ -8,6 +8,7 @@ const ContenedorPrincipal = styled.div`
   max-width: 1280px;
   margin: 0 auto;
   width: 100%;
+  
 `;
 
 const CardTitleContainer = styled.div`
@@ -17,17 +18,21 @@ const CardTitleContainer = styled.div`
 `;
 
 const PedidoContainer = styled.div`
+max-width: 1200px;
+margin: 0 auto;
+width: 100%;
   display: flex;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
+  flex-wrap: wrap;  
+ 
 `;
 
 const PedidoContent = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+ 
 `;
 
 const SelectionContainer = styled.div`
@@ -39,7 +44,7 @@ margin: 20px;
 color: #333;
 font-family: 'Cabin',sans-serif;
 margin-top: 0;
-margin-bottom: 150px;
+
 `;
 
 const SelectionImage = styled.img`
