@@ -1,6 +1,27 @@
 /* import React from "react"; */
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import '../../../Styles/GlobalStyles.css'
+import styled from "styled-components";
+import { PiIceCreamLight } from "react-icons/pi";
+
+const ContenedorPrincipal = styled.div`
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+`;
+
+const CardTitleContainer = styled.div`
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+
+  h2{
+    justify-content: center;
+    align-items: center;
+    
+  }
+`;
 
 const LoginPage = () => {
   const formik = useFormik({
@@ -19,47 +40,56 @@ const LoginPage = () => {
   });
 
   return (
-    <div>
-      <h1>Login</h1>
-      <form onSubmit={formik.handleSubmit}>
-        <div>
-          <label htmlFor="email">Correo Electrónico</label>
-          <input
-            type="text"
-            id="email"
-            name="email"
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            value={formik.values.email}
-          />
-          {formik.touched.email && formik.errors.email && (
-            <div>{formik.errors.email}</div>
-          )}
-        </div>
+    <ContenedorPrincipal>
+    <CardTitleContainer id="Entrar" className="titulos">
+          <h2>
+            <PiIceCreamLight /> Conectate para realizar tus pedidos <PiIceCreamLight />
+          </h2>
+        </CardTitleContainer>
+    <div className="LoginFromContainer">
+      <div className="boxLogin">
+        <h1>Login</h1>
+        <form onSubmit={formik.handleSubmit}>
+          <div className="lblsesion">
+            <label htmlFor="email">Correo Electrónico</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              value={formik.values.email}
+            />
+            {formik.touched.email && formik.errors.email && (
+              <div>{formik.errors.email}</div>
+            )}
+          </div>
 
-        <div>
-          <label htmlFor="password">Contraseña</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            value={formik.values.password}
-          />
-          {formik.touched.password && formik.errors.password && (
-            <div>{formik.errors.password}</div>
-          )}
-        </div>
+          <div className="lblsesion">
+            <label  htmlFor="password">Contraseña</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              value={formik.values.password}
+            />
+            {formik.touched.password && formik.errors.password && (
+              <div>{formik.errors.password}</div>
+            )}
+          </div>
 
-        <div>
-          <button type="submit">Ingresar</button>
-          <button onClick={() => console.log("Ir a página de registro")}>
-            Crear Cuenta
-          </button>
-        </div>
-      </form>
+          <div className="btnsForm">
+            <button type="submit">Ingresar</button>
+            <button onClick={() => console.log("Ir a página de registro")}>
+              Crear Cuenta
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
+    </ContenedorPrincipal>
   );
 };
 
