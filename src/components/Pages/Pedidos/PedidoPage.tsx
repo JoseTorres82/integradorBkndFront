@@ -114,11 +114,11 @@ const CheckIcon = styled(IoMdCheckmark)`
   margin-right: 5px;
 `;
 
-const RedCloseIcon = styled(IoMdClose)`
-  color: #ccc; /* Gris por defecto */
+/* const RedCloseIcon = styled(IoMdClose)`
+  color: #ccc; 
   cursor: pointer;
   margin-left: 5px;
-`;
+`; */
 
 const GreenCheckIcon = styled(IoMdCheckmark)`
   color: green; /* Verde cuando está seleccionado */
