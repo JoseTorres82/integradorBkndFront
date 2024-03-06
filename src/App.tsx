@@ -17,9 +17,9 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<><Hero /><CardSection /><ListaSabores /><ContactForm /></>} />
-        <Route path="/pedidopage" element={<PedidoPage />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/registro" element={<RegisterPage />} />
+        <Route path="/PedidoPage" element={<PedidoPage />} />
+        <Route path="/Login" element={<LoginPage />} />
+        <Route path="/Registro" element={<RegisterPage />} />
       </Routes>
       <Footer />
     </Router>

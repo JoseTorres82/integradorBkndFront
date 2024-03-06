@@ -14,49 +14,61 @@
   --font-color-main: #1d1d1d;
   padding-bottom: 10px;
 }
+ul {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    margin-right: 0;
+    justify-content: center;
+    align-items: center;
+}
 li{
     text-decoration: none;
     cursor: pointer;
     list-style: none;
-    margin-right: 15px;
+    margin-right: 1px;
  
 }
-
+/* 
 @media (width<=640px) {
     ul{
         display: none;
-    }
+    } */
 
 
-}
 .logo{
-
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     color: #1d1d1d;
-    font-family:Helvetica, sans-serif ;
-    margin-bottom: 1.5rem;
-    margin-left: 15px;
+    font-family: 'Cabin', sans-serif;
 }
 .logo img{
     width: 90px;
     height: auto;
-    margin-top: 20px;
     cursor: pointer;
-    padding: 5px;
+    /* padding: 5px; */
 }
+
 .LogoTxt{
-    display:block;
+    max-width: 250px;
+    width: 100%;
+    margin: 0 auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center ;
     align-items: center;
     padding: 0;
     text-align: center;
     letter-spacing: 1px;
+    line-height: 1.5;
+    text-align: center;
 }
-.LogoTxt h1{
+/* .LogoTxt h1{
 margin-bottom: 0;
 padding: 0;
-}
+} */
+
 .LogoTxt span{
     margin-bottom: 5px;
   

@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 import styled from "styled-components";
 import "./HeaderStyles.css"
 import "./Navbar/Navbar"
@@ -37,6 +37,54 @@ const Header: React.FC = () => {
 
         <Navbar />
       </div>
+    </HeaderStyled>
+  );
+};
+
+export default Header;
+ */
+// Header.tsx
+import React from "react";
+import styled from "styled-components";
+import Navbar from "./Navbar/Navbar";
+/* import '../HeaderStyles.css'; */
+
+interface HeaderStyledProps {
+  height?: string;
+  backgroundColor?: string;
+}
+
+const HeaderStyled = styled.div<HeaderStyledProps>`
+  max-width: 100vw;
+  margin: 0 auto;
+  width: 100%;
+  padding: 10px;
+  border-radius: 0px 0px 10px 10px;
+  height: ${(props) => props.height || "5rem"};
+  margin-top: 0;
+  background: ${(props) => props.backgroundColor || "#fabfb7"};
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top:0;
+  z-index: 1000;
+`;
+
+const Header: React.FC = () => {
+  return (
+    <HeaderStyled height="5rem" backgroundColor="#fabfb7">
+      {/* <div className="headerContainer">
+        <div className="logo">
+          <img src="/Logo.png" alt="logo bulldog frances" />
+          <div className="LogoTxt">
+            <h1>COOPER</h1>
+            <span>Helado Artesanal</span>
+          </div>
+        </div>
+
+      </div> */}
+        <Navbar />
     </HeaderStyled>
   );
 };

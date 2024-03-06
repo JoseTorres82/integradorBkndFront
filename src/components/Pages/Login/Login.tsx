@@ -3,6 +3,7 @@ import * as Yup from "yup";
 import '../../../Styles/GlobalStyles.css'
 import styled from "styled-components";
 import { PiIceCreamLight } from "react-icons/pi";
+import {Link} from "react-router-dom";
 
 const ContenedorPrincipal = styled.div`
   max-width: 1280px;
@@ -14,6 +15,7 @@ const CardTitleContainer = styled.div`
   max-width: 1280px;
   margin: 0 auto;
   width: 100%;
+  margin-top:2rem; 
 
   h2{
     justify-content: center;
@@ -81,9 +83,11 @@ const LoginPage = () => {
 
           <div className="btnsForm">
             <button type="submit">Ingresar</button>
+            <Link to='/Registro'>
             <button onClick={() => console.log("Ir a página de registro")}>
               Crear Cuenta
             </button>
+            </Link>
           </div>
         </form>
       </div>

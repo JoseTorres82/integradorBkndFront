@@ -15,6 +15,7 @@ const CardTitleContainer = styled.div`
   max-width: 1280px;
   margin: 0 auto;
   width: 100%;
+ 
 `;
 
 const PedidoContainer = styled.div`
@@ -217,7 +218,7 @@ const PedidoPage: React.FC = () => {
             </SelectionContent>
           </SelectionContainer>
           <DataSelect className="dataSelect">
-            <SelectedFlavors>{selectedCard.category === 'helados' ? `Selecciona ${selectedCard.quantity} sabores` : selectedCard.title}</SelectedFlavors>
+            <SelectedFlavors>{selectedCard.category === 'helados' ? `Selecciona hasta ${selectedCard.quantity} sabores` : selectedCard.title}</SelectedFlavors>
             {selectedCard.category === 'helados' && (
               <FlavorSelector>
                 <FlavorList>
